@@ -1,0 +1,8 @@
+﻿  main.cpp
+  one.cpp
+C:\Users\Dhanur\source\repos\OpenGL\OpenGL\one.cpp(88,11): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Dhanur\source\repos\OpenGL\OpenGL\one.cpp(89,11): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Dhanur\source\repos\OpenGL\OpenGL\one.cpp(90,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+one.obj : error LNK2005: _main already defined in main.obj
+C:\Users\Dhanur\source\repos\OpenGL\Debug\OpenGL.exe : fatal error LNK1169: one or more multiply defined symbols found
