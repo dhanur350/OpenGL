@@ -1,4 +1,4 @@
-//Jeff Chastine
+// OpenGL Program to make a mainScreen
 #include <Windows.h>
 #include <GL\glew.h>
 #include <GL\freeglut.h>
@@ -17,9 +17,9 @@ void render()
 	glutSwapBuffers();
 }
 
-
-
-int main(int argc, char* argv[]) {
+// Add Title in the frame Window using OpenGL Headerfile
+int main(int argc, char *argv[])
+{
 
 	// Initialize GLUT
 	glutInit(&argc, argv);
@@ -32,10 +32,11 @@ int main(int argc, char* argv[]) {
 	// Bind the two functions (above) to respond when necessary
 	glutReshapeFunc(changeViewPort);
 	glutDisplayFunc(render);
-	// Very important!  This initializes the entry points in the OpenGL driver so we can 
+	// Very important!  This initializes the entry points in the OpenGL driver so we can
 	// call all the functions in the API.
 	GLenum err = glewInit();
-	if (GLEW_OK != err) {
+	if (GLEW_OK != err)
+	{
 		fprintf(stderr, "GLEW error");
 		return 1;
 	}
