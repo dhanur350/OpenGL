@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <GL/glut.h>
 #include <math.h>
+#include <GL/freeglut.h>
 #define pi 3.142857
 
 // function to initialize

@@ -17,16 +17,14 @@
 void delay(unsigned int mseconds)
 {
     clock_t goal = mseconds + clock();
-    while (goal > clock())
-        ;
+    // while (goal > clock());
 }
 
 // This is a basic init for the
 // glut window
 void myInit(void)
 {
-    glClearColor(1.0, 1.0,
-                 1.0, 0.0);
+    glClearColor(1.0, 1.0, 1.0, 0.0);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluOrtho2D(0.0, maxWD,
